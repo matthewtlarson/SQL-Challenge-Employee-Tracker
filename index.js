@@ -16,6 +16,10 @@ server.connect(function (err) {
   viewsPrompt();
 }) //after user is connected and there is no error, spawn prompt
 
-viewsPrompt() {
-  inquirer.prompt([])
+function viewsPrompt() {
+  inquirer.prompt([
+    {
+      
+    }
+  ])
 }
