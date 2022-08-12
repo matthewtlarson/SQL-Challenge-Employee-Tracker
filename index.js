@@ -19,7 +19,18 @@ server.connect(function (err) {
 function viewsPrompt() {
   inquirer.prompt([
     {
-      
-    }
+    type: 'list',
+    message: 'Where would you like to go?',
+    name: 'firstChoice',
+    choices: [
+      'View all departments',
+      'View all roles',
+      'View all employees',
+      'Add a department',
+      'Add a role',
+      'Add an employee',
+      'Update an employee role'
+    ]
+    },
   ])
 }
