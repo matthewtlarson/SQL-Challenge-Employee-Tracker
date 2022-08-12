@@ -10,3 +10,12 @@ const server = mysql.createConnection({
   database: "user_db"
 });
 
+server.connect(function (err) {
+  if (err)
+  throw err;
+  viewsPrompt();
+}) //after user is connected and there is no error, spawn prompt
+
+viewsPrompt() {
+  inquirer.prompt([])
+}
